@@ -9,5 +9,17 @@ Distancia	  | Con SUBE registrada   | Con SUBE sin registrar
 */
 
 boton.addEventListener("click", () => {
+  let registrada = registrada.value 
+let distancia = distancia.value
+let tarifa = tarifa.innertext
+if (registrada === "si"){
+  if(distancia <= 3) {
+    tarifa="$ 715.24"
+   }
+    else{
+    if(distancia <=6) {
+      tarifa="$ 794.74"
+    }
+}
   // COMPLETAR
 });
