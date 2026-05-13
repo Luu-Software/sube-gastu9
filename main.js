@@ -13,7 +13,9 @@ boton.addEventListener("click", () => {
 
   let reg = registrada.value 
   let dis = distancia.value
-  
+  let tpo = Tipo.value
+
+  if (tpo==="ciudad") {
   if (reg === "si"){
     if(dis <= 3) {
       valor="$ 715.24"
@@ -79,6 +81,7 @@ boton.addEventListener("click", () => {
       }
     }
        }
+      }
 
     tarifa.innerText = valor;
 
