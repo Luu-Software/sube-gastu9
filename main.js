@@ -13,6 +13,7 @@ boton.addEventListener("click", () => {
 
   let reg = registrada.value 
   let dis = distancia.value
+  
   if (reg === "si"){
     if(dis <= 3) {
       valor="$ 715.24"
@@ -34,26 +35,50 @@ boton.addEventListener("click", () => {
       }
     }
   else{
-    if(dis <= 3) {
-      valor="$ 1137.23"
-     }
-      else{
-      if(dis <=6) {
-        valor="$ 1263.64"
+    if(reg==="no") {
+     if(dis <= 3) {
+       valor="$ 1137.23"
       }
-        else{
-          if(dis <= 12){
-            valor="$ 1360.99"
-          }
+       else{
+       if(dis <=6) {
+         valor="$ 1263.64"
+       }
+         else{
+           if(dis <= 12){
+             valor="$ 1360.99"
+           }
           else{
-            if(dis <= 27){
-              valor="$ 1458.41"
+             if(dis <= 27){
+               valor="$ 1458.41"
+             }
+           }
+         }
+       }
+      }
+      //tarifa
+      else{
+        if (reg==="Tarifa social"){
+        if(dis <= 3) {
+          valor="$ 339,18"
+         }
+          else{
+          if(dis <=6) {
+            valor="$ 376,88"
+          }
+            else{
+              if(dis <= 12){
+                valor="$ 405,91"
+              }
+             else{
+                if(dis <= 27){
+                  valor="$ 434,97"
+                }
+              }
             }
           }
-        }
       }
-
-      }
+    }
+       }
 
     tarifa.innerText = valor;
 
