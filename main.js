@@ -33,6 +33,9 @@ boton.addEventListener("click", () => {
             if(dis <= 27){
               valor="$ 917.24"
             }
+            else{
+              valor="Distancia No valida"
+            }
           }
         }
       }
@@ -53,6 +56,9 @@ boton.addEventListener("click", () => {
           else{
              if(dis <= 27){
                valor="$ 1458.41"
+             }
+             else{
+              valor="Distancia No valida"
              }
            }
          }
@@ -75,6 +81,9 @@ boton.addEventListener("click", () => {
              else{
                 if(dis <= 27){
                   valor="$ 434,97"
+                }
+                else{
+                  valor="Distancia No valida"
                 }
               }
             }
